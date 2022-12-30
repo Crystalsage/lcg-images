@@ -12,12 +12,8 @@ Where:
 - $c$ is the increment.
 - $X_0$ is a seed.
 
-
 ## The experiment
 The image generated with this program uses the [Netbpm image format's](https://en.wikipedia.org/wiki/Netpbm) P6 variation. 
 
-Every pixel in the image has a *twin*. If one pixel is at $Y_{n+1} = X_n * m + c \pmod{m}$ 
-then another would be at $Y'_{n+1} = X_n' * m + c$ where $X' = X^{-1} \pmod{m}$.
-
-## Results
-TODO
+Each pixel is randomly selected from a palette. The randomness is dictated by
+the LCG.
